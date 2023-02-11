@@ -1,0 +1,26 @@
+{
+    "name": "kedniko/php-parser-closure",
+    "autoload": {
+        "psr-4": {
+            "Kedniko\\PhpParserClosure\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "kedniko",
+            "email": "42846752+kedniko@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "nikic/php-parser": "^4.15"
+    },
+    "require-dev": {
+        "pestphp/pest": "^2.3"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
