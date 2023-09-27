@@ -3,14 +3,14 @@
 ## Quick Start
 
 ```php
-$phpParserClosure = new PhpParserClosure();
+$parser = new \Kedniko\PhpParserClosure\PhpParserClosure();
 
 $closure = function (int $number) {
   return $number * 2;
 };
 
-$node = $phpParserClosure->getNode($closure);
-$code = $node->getCode($nodeClosure);
+$parser->parse($closure);
+$code = $parser->getCode();
 
 echo $code;
 // "function (int $number) {
